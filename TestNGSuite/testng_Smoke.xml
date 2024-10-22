@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <groups>
+        <run>
+            <!-- Exclude the 'smoke' group -->
+            <exclude name="smoke"/>
+        </run>
+    </groups>
+    <listeners>
+        <listener class-name="Utils.Listeners"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/Arya/Desktop/AppiumFramework">
+        <classes>
+            <class name="Tests.eCommerce1"/>
+            <class name="Tests.eCommerceTest"/>
+        </classes>
+    </test>
+</suite>
